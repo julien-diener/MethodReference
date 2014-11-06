@@ -6,11 +6,11 @@
  * To change this template use File | Settings | File Templates.
  */
 public class FirstClass {
-    String baseName;
-    public FirstClass(String baseName){
-        this.baseName = baseName;
+    String prefix;
+    public FirstClass(String prefix){
+        this.prefix = prefix;
     }
-    public String formatName(String suffix){
-        return baseName+":"+suffix;
+    public String addPrefix(String suffix){
+        return prefix +":"+suffix;
     }
 }

@@ -7,8 +7,8 @@
  */
 public class Application {
     public static void main(String argv[]){
-        FirstClass  o1 = new FirstClass("prefix");
-        SecondClass o2 = new SecondClass();
-        System.out.println(o2.applyformatName("suffix",o1::formatName));
+        FirstClass first = new FirstClass("first");
+        SecondClass second = new SecondClass();
+        System.out.println(second.applyFunction("second",first::addPrefix));
     }
 }
